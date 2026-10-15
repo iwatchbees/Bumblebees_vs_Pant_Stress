@@ -1,0 +1,16 @@
+Analysis,Response,Family / test,Fixed effects,Random effects,Unit (n),Software / contrasts
+Starting workers,Workers at start,Linear model (ANOVA),Treatment,None,15 colonies,R lm
+Total brood,Eggs+larvae+pupae,Linear model (ANCOVA),Treatment + starting workers,None,15 colonies (UC excluded),R lm; Dunnett vs control (emmeans)
+Block check,Total brood,Linear model,Treatment + workers + block,None,15 colonies,R lm; F test for block
+Stage composition,Proportion eggs/larvae/pupae,Quasibinomial GLM (weights = total brood),Treatment,None,15 colonies,R glm
+Pupal traits (dry mass; lipid mass; lipid content),Per pupa,Linear mixed model,Treatment,Colony + developmental stage,103 pupae / 18 colonies,lme4/lmerTest; Dunnett vs control
+Lipid allometry,log lipid mass,Linear model; LRT for slope,log dry mass x treatment,None,103 pupae,R lm; anova LRT
+Floral traits (flowers; nectar/flower; nectar/plant),log response,Linear model,Treatment,None,25 plants,R lm; Dunnett vs control
+Nectar-flower association,Nectar per plant vs flowers,Spearman correlation (exploratory),,,5 treatment means,R cor.test
+Choice (all choices),Stressed vs healthy choices per bee,Binomial GLMM (cbind),Treatment (+ session),Colony + bee ID,160 bees,glmmTMB; Tukey/Holm
+Session effect,Stressed vs healthy choices,GLMM likelihood-ratio tests,Treatment; + session; + treatment x session,Bee ID,160 bees,glmmTMB anova
+First choice,Stressed chosen at first choice,Exact binomial vs 0.5,,,40 bees per stressor,R binom.test; Holm
+Preference with hive option,Healthy/stressed/hive proportions,Bayesian multinomial preference (bayespref),,,40 bees per stressor,bayespref; posterior medians
+Side bias,Left vs right choice,Binomial test / GLMM,Side,Bee ID,80 bees (colonies 5-8),R
+Aphid post-landing behaviour,Flower interactions; time in arm; rate; first-choice interactions,Paired t-test,Stressed vs healthy arm within bee,,40 bees,R t.test(paired = TRUE)
+Transition structure,Choice-to-choice transitions,Descriptive Markov transition matrices,,,per stressor,R

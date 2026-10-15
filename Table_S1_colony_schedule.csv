@@ -1,0 +1,9 @@
+Choice-assay colony,Assay type,Morning (AM) bees 1-20 (10 for same-vs-same),Afternoon (PM) bees 21-40 (10 for same-vs-same),Bees per colony
+1,Healthy vs stressed,Chewing,Aphid (piercing/sucking),40
+2,Healthy vs stressed,Drought,Mechanical,40
+3,Healthy vs stressed,Aphid (piercing/sucking),Drought,40
+4,Healthy vs stressed,Mechanical,Chewing,40
+5,Same vs same (side bias),Chewing,Aphid (piercing/sucking),20
+6,Same vs same (side bias),Drought,Mechanical,20
+7,Same vs same (side bias),Aphid (piercing/sucking),Drought,20
+8,Same vs same (side bias),Mechanical,Chewing,20
