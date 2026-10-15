@@ -1,0 +1,13 @@
+stressor,category,lower,median,upper
+Drought,Healthy,0.5566,0.6377,0.6945
+Drought,Stressed,0.2959,0.3559,0.4355
+Drought,Hive,0.0005,0.0064,0.0199
+Chewing,Healthy,0.5191,0.6373,0.7173
+Chewing,Stressed,0.2771,0.3502,0.4750
+Chewing,Hive,0.0013,0.0062,0.0370
+Mechanical,Healthy,0.2878,0.3732,0.4492
+Mechanical,Stressed,0.5404,0.6220,0.7071
+Mechanical,Hive,0.0008,0.0047,0.0296
+Aphid,Healthy,0.4217,0.4932,0.5782
+Aphid,Stressed,0.4064,0.4912,0.5583
+Aphid,Hive,0.0027,0.0134,0.0354
